@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ProRa - Bot Discord pentru moderare, securitate și loguri.">
+  <title>ProRa | Discord Security Bot</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #16243b;
+      --blue: #4b91ff;
+      --yellow: #f5c542;
+      --text: #f4f7ff;
+      --muted: #b8c6dc;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      background: #101c30;
+      border-bottom: 1px solid #263b5b;
+    }
+    .logo {
+      font-size: 27px;
+      font-weight: bold;
+      color: var(--yellow);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+    nav a:hover { color: var(--yellow); }
+    .hero {
+      text-align: center;
+      padding: 110px 20px;
+      background: radial-gradient(
+        ellipse at top, #203b64, var(--bg) 75%
+      );
+    }
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 60px);
+      margin: 0 0 15px;
+    }
+    .hero h1 span { color: var(--yellow); }
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: var(--muted);
+      font-size: 19px;
+    }
+    .button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--yellow);
+      color: #101827;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: transform .2s;
+    }
+    .button:hover { transform: translateY(-3px); }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 65px 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+    .feature {
+      background: var(--panel);
+      border: 1px solid #2c4567;
+      border-radius: 14px;
+      padding: 25px;
+    }
+    .feature h3 { color: var(--yellow); }
+    .feature p { color: var(--muted); }
+    .install {
+      text-align: center;
+      background: #101c30;
+      border-radius: 16px;
+    }
+    .install p { color: var(--muted); }
+    footer {
+      text-align: center;
+      padding: 28px;
+      color: var(--muted);
+      border-top: 1px solid #263b5b;
+    }
+    @media (max-width: 600px) {
+      header { flex-direction: column; gap: 12px; }
+      nav a { margin: 0 8px; }
+      .hero { padding: 75px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🛡️ ProRa</div>
+    <nav>
+      <a href="#functii">Funcții</a>
+      <a href="#instalare">Instalare</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Protejează-ți serverul cu <span>ProRa</span></h1>
+      <p>
+        Bot Discord pentru moderare automată,
+        protecție împotriva spamului și monitorizarea
+        activității serverului.
+      </p>
+      <a class="button" href="#instalare">
+        Adaugă ProRa pe Discord
+      </a>
+    </div>
+
+    <section id="functii">
+      <h2>Ce poate face ProRa?</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>🔗 Anti-Invite</h3>
+          <p>
+            Șterge invitațiile Discord nepermise
+            și aplică timeout de 10 minute.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>🖼️ Anti-Spam imagini</h3>
+          <p>
+            Detectează depășirea limitei de 3 imagini
+            în 10 secunde și aplică timeout de 30 minute.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>📋 Loguri avansate</h3>
+          <p>
+            Înregistrează ștergeri și editări de mesaje,
+            intrări, ieșiri și modificări de roluri.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>🛡️ Moderare</h3>
+          <p>
+            Monitorizează acțiuni de moderare,
+            timeout-uri și modificări ale serverului.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="instalare" class="install">
+      <h2>Instalează ProRa</h2>
+      <p>
+        ProRa va putea fi adăugat pe serverul tău
+        Discord printr-un link oficial de autorizare.
+      </p>
+      <p>
+        Butonul de instalare va fi activat în curând.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 ProRa. Bot Discord de moderare.
+  </footer>
+</body>
+</html>
